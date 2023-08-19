@@ -1,0 +1,106 @@
+
+main{
+    width: 100%;
+    
+}
+
+.main-container{
+    width: 96%;
+    background: var(--clr-white);
+    
+    margin: 2em auto;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    
+}
+
+.main-title{
+    
+    width: fit-content;
+    text-align: center;
+    margin: 0 auto;
+    padding: .5em 0em;
+    font-family: Jost;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 3rem;
+    line-height: 29px;
+}
+
+.items-section{
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    
+    
+}
+
+.items{
+    list-style: none;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.item{
+    
+    height: 400px;
+    overflow: hidden;
+    width: 400PX;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    border: 2px solid #cfcece;
+    margin-bottom: .5em;
+    margin-left: .5em;
+    
+}
+
+.sale{
+    
+    align-self: start;
+    font-family: "Jost", sans-serif;
+    background: #FE0000;
+    text-transform: uppercase;
+    padding: .5em 1em;
+    height: 12%;
+    color: white;
+}
+
+.no-sale{
+    background: none;
+
+}
+.item-img{
+    padding: 0em 2em;
+    height: 150px;
+    transition: transform .5s, visibility .5s ease-in;
+}
+
+.item-img:hover{
+    transform: scale(1.8);
+
+}
+
+picture{
+    
+    padding: 4em 0em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.details,.bs-price{
+    
+    font-family: 'Open Sans', sans-serif;
+    padding: .5em .8em;
+    
+}
+
+.bs-price{
+    color: var(--clr-violet);
+    font-size: 1.1rem;
+}
+

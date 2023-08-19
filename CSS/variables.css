@@ -1,0 +1,26 @@
+:root{
+
+    --font-1:'Jost', sans-serif;
+    --font-2:'Open Sans', sans-serif;
+    
+    --clr-black: #000000;
+    --clr-violet: #5800FF;
+    --clr-pink: #E900FF;
+    --clr-yellow: #FFC600;
+    --clr-red: #FF3333;
+    --clr-primary: #EDEDED;
+    --clr-white: #ffffff;
+
+    --fw-light: 300;
+    --fw-regular: 400;
+    --fw-medium: 500;
+    --fw-semi-bold: 600;
+    --fw-bold: 700;
+    --fw-xbold: 800
+
+    
+
+}
+
+
+/* font-family: 'Jost', sans-serif; */

@@ -1,0 +1,143 @@
+
+main{
+    width: 100%;
+}
+
+.main-content{
+    width: 90%;
+    margin: 2.5em auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-title{
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 6rem;
+    line-height: 139px;
+    /* identical to box height */
+
+    text-align: center;
+}
+
+hr{
+    height: 5px;
+    width: 100%;
+    background-color: var(--clr-violet);
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 2em;
+}
+
+.main-p{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2.5rem;
+    line-height: 60px;
+    margin-bottom: 1em;
+}
+
+.main-img{
+    margin: 0 auto;
+    width: 90%;
+    margin-bottom: 40px;
+}
+
+.img1{
+    margin: 0 auto;
+}
+
+.sub{
+    width: 90%;
+    height: 285px;
+    margin: 0 auto;
+    background: var(--clr-violet);
+    color: var(--clr-white);
+}
+
+.sub-content{
+    width: 90%;
+    height: 90%;
+    margin: 0.5em auto;
+    padding: .5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 41px;
+    /* identical to box height */
+
+    text-align: center;
+}
+
+.sub-title{
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 43px;
+    text-align: center;
+}
+
+
+ .sub-input{
+    width: 80%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    
+    
+}
+
+
+
+.email-input-main{
+    width: 50%;
+    
+   margin-left: 1em;
+    
+    display: flex;
+    flex-grow: 1;
+    flex-shrink: 1;
+    
+}
+
+.email-input-sub{
+    width: 100%;
+    padding: .7em;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+
+.email-input-sub::placeholder{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    
+    text-align: center;
+
+    color: #777676;
+}
+
+
+.sub-btn{
+
+    display: inline-block;
+    border-top-right-radius: 30px ;
+    border-bottom-right-radius: 30px ;
+    background: #000000;
+    color: var(--clr-white);
+    text-decoration: none;
+    padding: .2em;
+    text-align: center;
+}
+

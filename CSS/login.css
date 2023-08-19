@@ -1,0 +1,368 @@
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: var(--clr-violet)
+}
+
+body {
+    width: 100%;
+    
+    /* background: var(--gray-1); */
+
+    overflow: hidden;
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(88,0,255,1) 29%, rgba(233,0,255,1) 56%, rgba(255,255,255,1) 100%);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	height: 100vh;
+}
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+
+.log-in {
+    margin: 6em auto;
+    
+    max-width: 850px;
+    height: 80%;
+    width: 80%;
+    box-shadow: 0px 1px 5px #000;
+    
+    background-color: #fff;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+
+}
+
+form{
+    width: 100%;
+}
+.left{
+    padding: 0.5em;
+    width: 85%;
+    min-width: 300px;
+    height: 100%;
+    
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+
+}
+.logo{
+    margin-top: .5em;
+    
+}
+
+.login-content{
+    margin-top: 9em;
+    width: 100%;
+    height: 80%;
+    
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.welcome-back{
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18.2248px;
+    line-height: 26px;
+    text-align: center;
+
+    color: rgba(0, 0, 0, 0.6);
+
+
+}
+
+.user-info{
+    
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 1.5em;
+    
+}
+
+.email-field,.pwd-field{
+    position: relative;
+    font-size: 1rem;
+    padding: 1.2em;
+    margin-bottom: .5em;
+}
+
+.email-field input,.pwd-field input{
+    border: 1.5px solid #C1BBBB;
+    box-shadow: 0px 3.03746px 3.03746px rgba(0, 0, 0, 0.25);
+    -webkit-appearance: none;
+    -ms-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline: none;
+    padding: 1em;
+    width: 420px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+    background-color: #fff;
+}
+
+.email-field .placeholder ,.pwd-field .placeholder{
+    position: absolute;
+    left: 1.8em;
+    top: calc(15% + 10px);
+
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1rem;
+    line-height: 19px;
+    padding: .2em;
+    transition: 
+    top 0.3s ease;
+    
+
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.email-field input:valid + .placeholder,
+.email-field input:focus + .placeholder,
+.pwd-field input:valid + .placeholder,
+.pwd-field input:focus + .placeholder{
+    top: 7px;
+    background: var(--clr-white);
+}
+.pwd-field input:valid,
+.pwd-field input:focus,
+.email-field input:valid,
+.email-field input:focus{
+    border-color: var(--clr-violet);
+    transition: 0.1s;
+}
+
+.error-msg{
+    width: max-content;
+    font-size: var(--text-size-2);
+    color: red;
+  
+    position: absolute;
+    right: 20px;
+    top: 90%;
+    animation: error 6s infinite;
+
+    
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1rem;
+    line-height: 19px;
+    padding: .2em;
+    transition: 
+    top 0.3s ease;
+    
+
+}
+
+.valid-msg {
+    width: max-content;
+    font-size: var(--text-size-2);
+    color: rgb(4, 109, 4);
+  
+    position: absolute;
+    right: 20px;
+    top: 90%;
+    animation: error 6s infinite;
+
+    
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1rem;
+    line-height: 19px;
+    padding: .2em;
+    transition: 
+    top 0.3s ease;
+    
+
+}
+
+.choices{
+    
+    display: flex;
+    color: #000;
+    justify-content: space-between;
+    align-items: center;
+    width: 64%;
+    height: 3em;
+
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.2rem;
+    line-height: 19px;
+    transition: 
+    top 0.3s ease;
+    
+
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.checkbox{
+    width: 2em;
+    height: 2em;
+
+    background: #FFFFFF;
+    border: 0.759365px solid #C1BBBB;
+    box-sizing: border-box;
+    box-shadow: 0px 3.03746px 3.03746px rgba(0, 0, 0, 0.25);
+}
+
+.remember{
+    width:165px;
+    display: flex;
+    align-items: center;
+}
+
+.forget{
+    width:207px;
+}
+.choices .remember span{
+    margin-left: 0.5em;
+    width:100%;
+}
+
+.submit-box{
+    width: 50%;
+    margin-top: 1em;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 1em;
+
+}
+
+.login , .signup,.azerty{
+    padding: 1em;
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.2rem;
+    line-height: 26px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.login{
+    color: var(--clr-white);
+    background-color: var(--clr-violet);
+}
+
+.signup{
+    border: 3px solid var(--clr-violet);
+    color: #000;
+}
+
+.azerty{
+    color: var(--clr-white);
+    background-color: rgb(66, 66, 66);
+}
+
+.hide{
+    display: none;
+}
+.other-logs{
+   
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 55%;
+}
+.other-logs p{
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.2rem;
+    line-height: 26px;
+    color: rgba(0, 0, 0, 0.7)
+
+}
+
+img{
+    width: 2em;
+    height: 2em;
+}
+
+.other-logs-links{
+    display: flex;
+    justify-content: space-between;
+    width: 20%;
+}
+
+
+.logo{
+    width: 60%;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+
+.logo img{
+    width:170px;
+    
+}
+
+
+
+@media (max-width:950px){
+    
+
+    .left{
+        width: 90%;
+    }
+
+    .user-info{
+        padding: 0em;
+    }
+
+    .submit-box{
+        width: 100%;
+    }
+}
+
+@media (max-width:550px){
+    .pwd-field,.email-field{
+        width: 300px;
+    }
+
+    .pwd-field input,.email-field input{
+        width: 250px;
+    }
+
+    .log-in{
+        height:100%;
+    }
+}

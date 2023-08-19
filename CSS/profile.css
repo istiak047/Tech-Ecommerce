@@ -1,0 +1,246 @@
+
+main{
+    width: 100%;
+    
+}
+
+.main-container{
+    width: 100%;
+    background: var(--clr-white);
+    min-height: 700px;
+    margin: 2em auto;
+    display: flex;
+    justify-content: center;
+    
+    
+    
+}
+
+.profile{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    width: 80%;
+    
+    height: 200px;
+    background-color: var(--clr-violet);
+   
+}
+
+.profile-picture{
+    width: 100px;
+    height: 100px;
+    margin-right: 1rem;
+    
+}
+
+.c-title{
+    
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 3rem;
+    line-height: 139px;
+    /* identical to box height */
+    color: var(--clr-white);
+    
+    
+}
+
+.submit-content{
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 35px;
+    width: 100%;
+}
+
+.s-title{
+    margin-bottom: 1em;
+}
+.submit{
+    width: 80%;
+    height: 950px;
+    margin : 0 auto;
+    background-color: var(--clr-white);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+    
+}
+
+.submit-area{
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+   width: 80%;
+   height: 90%;
+   
+   
+}
+
+
+
+form{
+    width: 100%;
+    display: flex;
+}
+
+.groups{
+    width: 100%;
+}
+
+
+.form-group{
+    width: 100%;
+}
+.form-group label{
+    display: block;
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 35px;
+    /* identical to box height */
+}
+
+.form-group input{
+    width: 80%;
+    height: 50px;
+    padding: 0em .8em;
+    margin-bottom: 1em;
+    
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+
+
+.form-group input.invalid{
+    border: 1px solid red;
+} 
+
+.form-group input::placeholder{
+    position: absolute;
+    top: 20px;
+}
+.form-group .error-hint{
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 35px;
+    color: red;
+}
+
+hr{
+    height: 3px;
+    margin-top: 1.2em;
+    margin-bottom: 2em;
+    background-color: var(--clr-violet);
+    border: none;
+}
+
+.buttons{
+    
+    width: 100%;    
+    height: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    
+    
+}
+button + button{
+    margin-left: .5em;
+}
+button{
+    
+    padding: .5em 1em;
+    width: 150px;
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.825rem;
+    line-height: 43px;
+    text-align: center;
+    border: 2px solid var(--clr-violet);
+    background: none;
+    border-radius: 20px;
+    
+
+    color: #000;
+    transition: all 0.3s ease;
+
+}
+
+.submit-button{
+    background-color: var(--clr-violet);
+    color: #fff;
+}
+
+
+.hide{
+    display: none;
+}
+
+
+
+@media (max-width:950px) {
+
+    .submit{
+        max-height: 950px;
+    }
+    
+    .submit-area{
+        height: 100%;
+        width: 95%;
+    }
+
+    .buttons{
+        justify-content: center;
+    }
+
+    form{
+        flex-wrap: wrap;
+    }
+
+    .groups{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .form-group{
+        width: 60%;
+    }
+
+    .form-group input{
+        width: 100%;
+    }
+
+    .s-title{
+        width: 300px;
+    }
+    
+    .c-title{
+        width:260px;
+        word-break: none;
+    }
+
+    .profile{
+        min-height: 200px;
+    }
+}
+
+@media (max-width: 500px){
+
+    .profile , .submit{
+        width: 390px;
+    }
+}
